@@ -1,4 +1,6 @@
+import 'package:cancer_app/screens/login/login.dart';
 import 'package:cancer_app/screens/survey/survey.dart';
+import 'package:cancer_app/screens/welcome/welcome.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,8 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Cancer App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: Survey(),
+      home: Login(),
     );
   }
 }
-
