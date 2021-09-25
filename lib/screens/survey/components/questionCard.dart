@@ -1,7 +1,18 @@
+import 'dart:ui';
+
+import 'package:cancer_app/sizeConfig.dart';
 import 'package:flutter/material.dart';
 
+
 class QuestionCard extends StatefulWidget {
-  const QuestionCard({Key? key}) : super(key: key);
+
+  final List<List> answerTextList ;
+  //[[text,width],[],...]
+  String yourAnswer = "" ;
+
+  QuestionCard({required this.answerTextList});
+
+
 
   @override
   _QuestionCardState createState() => _QuestionCardState();
@@ -10,8 +21,13 @@ class QuestionCard extends StatefulWidget {
 class _QuestionCardState extends State<QuestionCard> {
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
+
+    // String getAnswer(){
+    //   return widget.yourAnswer ;
+    // }
     return Container(
-      padding: EdgeInsets.only(top: 50, left: 27, right: 25),
+      padding: EdgeInsets.only(top: getProportionateScreenHeight(50), left: getProportionateScreenHeight(27), right: getProportionateScreenHeight(25)),
       width: double.infinity,
       color: Colors.transparent,
       child: Column(
@@ -22,25 +38,25 @@ class _QuestionCardState extends State<QuestionCard> {
             "Carrying",
             style: TextStyle(
               color: Colors.black,
-              fontSize: 32,
+              fontSize: getProportionateScreenWidth(32),
               fontFamily: "Gilroy",
               fontWeight: FontWeight.w300,
             ),
           ),
           SizedBox(
-            height: 5,
+            height: getProportionateScreenHeight(5),
           ),
           Row(
             children: [
               Container(
-                width: 103,
-                height: 40,
+                width: getProportionateScreenWidth(103),
+                height: getProportionateScreenHeight(40),
                 child: Center(
                   child: Text(
                     'Heavy',
                     style: TextStyle(
                       fontFamily: 'GoogleSans',
-                      fontSize: 32,
+                      fontSize: getProportionateScreenWidth(32),
                       color: Colors.black,
                       fontWeight: FontWeight.w900,
                     ),
@@ -52,33 +68,42 @@ class _QuestionCardState extends State<QuestionCard> {
                 ),
               ),
               SizedBox(
-                width: 10,
+                width: getProportionateScreenWidth(10),
               ),
               Container(
                 child: Column(
                   children: [
+                    SizedBox(
+                      height: getProportionateScreenHeight(10),
+                    ),
                     Text(
                       "Weight",
                       style: TextStyle(
                         fontFamily: 'GoogleSans',
-                        fontSize: 32,
+                        fontSize: getProportionateScreenWidth(32),
                         color: Colors.black,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    //TODO
-                    //Image.asset(),
+                    Container(
+                      width: getProportionateScreenWidth(100),
+                      height: getProportionateScreenHeight(10),
+                      child: FittedBox(
+                        fit: BoxFit.contain,
+                        child: Image.asset('assets/survey/underline/Underline.png'),
+                      ),
+                    ),
                   ],
                 ),
               ),
               SizedBox(
-                width: 10,
+                width: getProportionateScreenWidth(10),
               ),
               Text(
                 "?",
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 32,
+                  fontSize: getProportionateScreenWidth(32),
                   //fontFamily: "",
                   fontWeight: FontWeight.w300,
                 ),
@@ -86,89 +111,73 @@ class _QuestionCardState extends State<QuestionCard> {
             ],
           ),
           SizedBox(
-            height: 50,
+            height: getProportionateScreenHeight(50),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               OptionButton(
-                text: "Easy",
-                textColor: Colors.black,
-                buttonColor: Color(0xffE8E8E8),
-                fontWeight: FontWeight.bold,
-                boxWidth: 67,
+                text: widget.answerTextList[0][0],
+                textColor: widget.yourAnswer == widget.answerTextList[0][0] ? Colors.white :Colors.black,
+                buttonColor: widget.yourAnswer == widget.answerTextList[0][0] ? Color(0xff2BAAE4) :Color(0xffE8E8E8),
+                fontWeight: widget.yourAnswer == widget.answerTextList[0][0] ? FontWeight.w900 : FontWeight.bold,
+                boxWidth: getProportionateScreenWidth(widget.answerTextList[0][1]),
+                onTap: (){
+                  setState(() {
+                    widget.yourAnswer = widget.answerTextList[0][0] ;
+                  });
+                },
               ),
               OptionButton(
-                text: "Normal",
-                textColor: Colors.white,
-                buttonColor: Color(0xff2BAAE4),
-                fontWeight: FontWeight.w900,
-                boxWidth: 80,
+                text: widget.answerTextList[1][0],
+                textColor: widget.yourAnswer == widget.answerTextList[1][0] ? Colors.white :Colors.black,
+                buttonColor: widget.yourAnswer == widget.answerTextList[1][0] ? Color(0xff2BAAE4) :Color(0xffE8E8E8),
+                fontWeight: widget.yourAnswer == widget.answerTextList[1][0] ? FontWeight.w900 : FontWeight.bold,
+                boxWidth: getProportionateScreenWidth(widget.answerTextList[1][1]),
+                onTap: (){
+                  setState(() {
+                    widget.yourAnswer = widget.answerTextList[1][0] ;
+                  });
+                },
               ),
               OptionButton(
-                text: "Easy",
-                textColor: Colors.black,
-                buttonColor: Color(0xffE8E8E8),
-                fontWeight: FontWeight.bold,
-                boxWidth: 67,
+                text: widget.answerTextList[2][0],
+                textColor: widget.yourAnswer == widget.answerTextList[2][0] ? Colors.white :Colors.black,
+                buttonColor: widget.yourAnswer == widget.answerTextList[2][0] ? Color(0xff2BAAE4) :Color(0xffE8E8E8),
+                fontWeight: widget.yourAnswer == widget.answerTextList[2][0] ? FontWeight.w900 : FontWeight.bold,
+                boxWidth: getProportionateScreenWidth(widget.answerTextList[2][1]),
+                onTap: (){
+                  setState(() {
+                    widget.yourAnswer = widget.answerTextList[2][0] ;
+                  });
+                },
               ),
               OptionButton(
-                text: "Easy",
-                textColor: Colors.black,
-                buttonColor: Color(0xffE8E8E8),
-                fontWeight: FontWeight.bold,
-                boxWidth: 67,
+                text: widget.answerTextList[3][0],
+                textColor: widget.yourAnswer == widget.answerTextList[3][0] ? Colors.white :Colors.black,
+                buttonColor: widget.yourAnswer == widget.answerTextList[3][0] ? Color(0xff2BAAE4) :Color(0xffE8E8E8),
+                fontWeight: widget.yourAnswer == widget.answerTextList[3][0] ? FontWeight.w900 : FontWeight.bold,
+                boxWidth: getProportionateScreenWidth(widget.answerTextList[3][1]),
+                onTap: (){
+                  setState(() {
+                    widget.yourAnswer = widget.answerTextList[3][0] ;
+                  });
+                },
               ),
             ],
           ),
           SizedBox(
-            height: 50,
+            height: getProportionateScreenHeight(50),
           ),
           Center(
             child: Text(
               "Are you able to carry suitcases?",
               style: TextStyle(
                 color: Colors.black.withOpacity(0.46),
-                fontSize: 16,
+                fontSize: getProportionateScreenWidth(16),
                 //fontFamily: "",
                 fontWeight: FontWeight.bold,
               ),
-            ),
-          ),
-          SizedBox(
-            height: 40,
-          ),
-          Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                //TODO image
-                Container(
-                  child: Row(
-                    children: [
-                      Text(
-                        "2",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          //fontFamily: "",
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        " / 43",
-                        style: TextStyle(
-                          color: Colors.black.withOpacity(0.43),
-                          fontSize: 13,
-                          //fontFamily: "",
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                //TODO image
-              ],
             ),
           ),
         ],
@@ -183,6 +192,7 @@ class OptionButton extends StatelessWidget {
   final Color textColor;
   final FontWeight fontWeight;
   final double boxWidth;
+  final void Function() onTap ;
 
   OptionButton({
     required this.text,
@@ -190,27 +200,31 @@ class OptionButton extends StatelessWidget {
     required this.textColor,
     required this.fontWeight,
     required this.boxWidth,
+    required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: boxWidth,
-      height: 40,
-      child: Center(
-        child: Text(
-          text,
-          style: TextStyle(
-            fontFamily: 'GoogleSans',
-            fontSize: 15,
-            color: textColor,
-            fontWeight: fontWeight,
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: boxWidth,
+        height: getProportionateScreenHeight(40),
+        child: Center(
+          child: Text(
+            text,
+            style: TextStyle(
+              fontFamily: 'GoogleSans',
+              fontSize: getProportionateScreenWidth(15),
+              color: textColor,
+              fontWeight: fontWeight,
+            ),
           ),
         ),
-      ),
-      decoration: BoxDecoration(
-        color: buttonColor,
-        borderRadius: BorderRadius.circular(20),
+        decoration: BoxDecoration(
+          color: buttonColor,
+          borderRadius: BorderRadius.circular(20),
+        ),
       ),
     );
   }

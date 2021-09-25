@@ -44,9 +44,20 @@ class _BodyState extends State<Body> {
                   filter: ImageFilter.blur(sigmaX: 30, sigmaY: 30),
                   child: Container(
                     width: double.infinity,
-                    height: getProportionateScreenHeight(844) -
-                        getProportionateScreenHeight(435),
-                    child: QuestionCard(),
+                    height: getProportionateScreenHeight(844) - getProportionateScreenHeight(435),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          height: getProportionateScreenHeight(10),
+                        ),
+                        Center(
+                            child: Image.asset('assets/survey/swipe_rectangle/Swipe_Recantagle.png'),
+                        ),
+                        QuestionCard(
+                          answerTextList: [["Easy",67.0],["Normal",80.0],["Simple",67.0],["Hard",67.0]] ,
+                        ),
+                      ],
+                    ),
                     decoration: BoxDecoration(
                         borderRadius:
                             BorderRadius.vertical(top: Radius.circular(50)),
@@ -90,9 +101,6 @@ class _BodyState extends State<Body> {
 }
 
 class GIFCard extends StatelessWidget {
-  const GIFCard({
-    Key? key,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
