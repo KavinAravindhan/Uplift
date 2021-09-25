@@ -10,8 +10,8 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.amber,
+    return Stack(
+      children: [],
     );
   }
 }
