@@ -48,6 +48,8 @@ flutter:
   assets:
     - assets/survey/background/
     - assets/survey/GIFs/Lung/
+    - assets/survey/underline/
+    - assets/survey/swipe_rectangle/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
