@@ -1,3 +1,4 @@
+import 'package:cancer_app/screens/login/login.dart';
 import 'package:cancer_app/sizeConfig.dart';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
@@ -17,9 +18,9 @@ class _WelcomeState extends State<Welcome> {
 
   @override
   void dispose() {
-    super.dispose() ;
-    audioPlayer.release() ;
-    audioPlayer.dispose() ;
+    super.dispose();
+    audioPlayer.release();
+    audioPlayer.dispose();
   }
 
   playMusic() async {
@@ -42,12 +43,18 @@ class _WelcomeState extends State<Welcome> {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            width: double.infinity,
-            height: double.infinity,
-            child: Image(
-              image: AssetImage("assets/welcome/BG/BG.png"),
-              fit: BoxFit.cover,
+          GestureDetector(
+            onTap: () {
+              Navigator.pushReplacement(
+                  context, MaterialPageRoute(builder: (context) => Login()));
+            },
+            child: Container(
+              width: double.infinity,
+              height: double.infinity,
+              child: Image(
+                image: AssetImage("assets/welcome/BG/BG.png"),
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           Container(
