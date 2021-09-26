@@ -5,6 +5,12 @@ import 'package:cancer_app/sizeConfig.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 
+String name ="";
+String gender="" ;
+String dob="" ;
+
+
+
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
 
@@ -13,9 +19,10 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
-  bool _switchIsOn = false;
-  Color maleTextColor = Colors.blue;
-  Color femaleTextColor = Colors.grey;
+  bool _switchIsOn = false ;
+  Color maleTextColor = Colors.blue ;
+  Color femaleTextColor = Colors.grey ;
+
 
   @override
   Widget build(BuildContext context) {
@@ -98,6 +105,12 @@ class _SignUpState extends State<SignUp> {
                     ),
                     SizedBox(height: getProportionateScreenHeight(8)),
                     TextField(
+                      onChanged: (String input){
+                        setState(() {
+                          name = input ;
+                        });
+                      },
+
                       decoration: const InputDecoration(
                         labelStyle: TextStyle(
                             color: Colors.black,
@@ -152,13 +165,17 @@ class _SignUpState extends State<SignUp> {
                                       onChanged: (_switchIsOn) {
                                         setState(() {
                                           if (_switchIsOn) {
+
+                                            gender = "female" ;
                                             maleTextColor = Colors.grey;
                                             femaleTextColor = Colors.pink;
                                           } else {
+                                            gender = "male" ;
                                             maleTextColor = Colors.blue;
                                             femaleTextColor = Colors.grey;
                                           }
                                           this._switchIsOn = _switchIsOn;
+
                                         });
                                       }),
                                   Text(
@@ -204,6 +221,8 @@ class _SignUpState extends State<SignUp> {
                                       // ------------------------------DATE CHOOSER-----------------------------------------
                                       onConfirm: (date) {
                                     print('confirm $date');
+                                    dob = date.toString() ;
+
                                   },
                                       currentTime: DateTime.now(),
                                       locale: LocaleType.en);

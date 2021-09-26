@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:cancer_app/screens/survey/components/TextSpeech.dart';
+import 'package:cancer_app/screens/survey/survey.dart';
 import 'package:cancer_app/sizeConfig.dart';
 import 'package:flutter/material.dart';
 
@@ -7,13 +9,27 @@ import 'questionCard.dart';
 
 class Body extends StatefulWidget {
   final StatefulWidget container;
-  Body({required this.container});
+  final String gifText;
+  final String speech ;
+  Body({required this.container,required this.gifText,required this.speech}) ;
 
   @override
   _BodyState createState() => _BodyState();
 }
 
 class _BodyState extends State<Body> {
+
+  void speaking() async{
+    await TextSpeech(textSpeak: widget.speech, isActiveBool: isTTS).speak(widget.speech);
+  }
+
+  @override
+  void initState() {
+    speaking() ;
+    super.initState();
+  }
+
+
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
@@ -36,7 +52,9 @@ class _BodyState extends State<Body> {
               SizedBox(
                 height: getProportionateScreenHeight(65),
               ),
-              GIFCard(),
+              GIFCard(
+                gifText: widget.gifText,
+              ),
               SizedBox(
                 height: getProportionateScreenHeight(34),
               ),
@@ -75,16 +93,32 @@ class _BodyState extends State<Body> {
             top: getProportionateScreenHeight(45),
           ),
           child: Tooltip(
-            message: "Pause the Test",
+            message: "Pause/Paly the Test",
             child: ClipRect(
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
                 child: GestureDetector(
-                  onTap: () {},
-                  child: Container(
+                  onTap: () {
+                    setState(() {
+                      if(isTTS == true){
+                        isTTS = false ;
+                      }
+                      else{
+                        isTTS = true ;
+                      }
+                    });
+                  },
+                  child: isTTS==true ? Container(
                     width: getProportionateScreenWidth(41),
                     height: getProportionateScreenWidth(41),
                     child: Icon(Icons.pause_rounded),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: Colors.white10.withOpacity(0.6)),
+                  ) : Container(
+                    width: getProportionateScreenWidth(41),
+                    height: getProportionateScreenWidth(41),
+                    child: Icon(Icons.play_arrow),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
                         color: Colors.white10.withOpacity(0.6)),
@@ -100,6 +134,9 @@ class _BodyState extends State<Body> {
 }
 
 class GIFCard extends StatelessWidget {
+  final String gifText;
+  GIFCard({required this.gifText});
+
   @override
   Widget build(BuildContext context) {
     return ClipRect(
@@ -113,8 +150,7 @@ class GIFCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             child: Image(
               fit: BoxFit.cover,
-              image: AssetImage("assets/survey/GIFs/Lung/1.gif/1.gif"),
-            ),
+              image: AssetImage(gifText),            ),
           ),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(40),
