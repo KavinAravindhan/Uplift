@@ -1,14 +1,40 @@
 import 'package:cancer_app/sizeConfig.dart';
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
 
-class Welcome extends StatelessWidget {
+class Welcome extends StatefulWidget {
   const Welcome({Key? key}) : super(key: key);
+
+  @override
+  _WelcomeState createState() => _WelcomeState();
+}
+
+class _WelcomeState extends State<Welcome> {
+  AudioPlayer audioPlayer = AudioPlayer();
+  AudioPlayerState audioPlayerState = AudioPlayerState.PAUSED;
+  String url = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+
+  @override
+  void dispose() {
+    super.dispose();
+    audioPlayer.release();
+    audioPlayer.dispose();
+  }
+
+  playMusic() async {
+    await audioPlayer.play(url);
+  }
+
+  stopMusic() async {
+    await audioPlayer.stop();
+  }
 
   @override
   Widget build(BuildContext context) {
 // this must be a top-level function
 
     SizeConfig().init(context);
+    playMusic();
     return Scaffold(
       body: Stack(
         children: [
@@ -84,8 +110,20 @@ class Welcome extends StatelessWidget {
                             ),
                           ),
                           GestureDetector(
-                            child: Icon(Icons.volume_up_rounded),
-                            onTap: () {},
+                            child: Icon(
+                                audioPlayerState == AudioPlayerState.PLAYING
+                                    ? Icons.volume_up_rounded
+                                    : Icons.volume_mute_rounded),
+                            onTap: () {
+                              setState(() {
+                                if (audioPlayerState ==
+                                    AudioPlayerState.PLAYING) {
+                                  stopMusic();
+                                } else {
+                                  playMusic();
+                                }
+                              });
+                            },
                           ),
                         ],
                       ),
