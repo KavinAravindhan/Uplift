@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 import 'questionCard.dart';
 
 class Body extends StatefulWidget {
-  const Body({Key? key}) : super(key: key);
+  final StatefulWidget container;
+  Body({required this.container});
 
   @override
   _BodyState createState() => _BodyState();
@@ -44,18 +45,18 @@ class _BodyState extends State<Body> {
                   filter: ImageFilter.blur(sigmaX: 30, sigmaY: 30),
                   child: Container(
                     width: double.infinity,
-                    height: getProportionateScreenHeight(844) - getProportionateScreenHeight(435),
+                    height: getProportionateScreenHeight(844) -
+                        getProportionateScreenHeight(435),
                     child: Column(
                       children: [
                         SizedBox(
                           height: getProportionateScreenHeight(10),
                         ),
                         Center(
-                            child: Image.asset('assets/survey/swipe_rectangle/Swipe_Recantagle.png'),
+                          child: Image.asset(
+                              'assets/survey/swipe_rectangle/Swipe_Recantagle.png'),
                         ),
-                        QuestionCard(
-                          answerTextList: [["Easy",67.0],["Normal",80.0],["Simple",67.0],["Hard",67.0]] ,
-                        ),
+                        widget.container,
                       ],
                     ),
                     decoration: BoxDecoration(
@@ -68,8 +69,6 @@ class _BodyState extends State<Body> {
             ],
           ),
         ),
-
-        // Insert here
         Padding(
           padding: EdgeInsets.only(
             left: getProportionateScreenWidth(332.6),
@@ -101,7 +100,6 @@ class _BodyState extends State<Body> {
 }
 
 class GIFCard extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return ClipRect(
