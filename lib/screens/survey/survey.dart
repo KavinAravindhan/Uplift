@@ -8,6 +8,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:firebase_core/firebase_core.dart';
 
+import 'components/successfullySubmitted.dart';
+
 final _auth = FirebaseAuth.instance;
 
 class Survey extends StatefulWidget {
@@ -16,41 +18,42 @@ class Survey extends StatefulWidget {
 }
 
 class _SurveyState extends State<Survey> {
-
-  final _firestore = FirebaseFirestore.instance ;
+  final _firestore = FirebaseFirestore.instance;
   String name = "kir";
   String id = "1";
   String gender = "male";
   String dob = "12";
   String age = "19";
-  var email ;
+  var email;
 
   Future<void> gettingEmail() async {
-    try{
-      if(_auth != null){
+    try {
+      if (_auth != null) {
         final user = await _auth.currentUser;
-        email = user ;
+        email = user;
       }
-    }
-    catch(e){
+    } catch (e) {
       print(e);
     }
   }
-  void initiateFirebase()async {
+
+  void initiateFirebase() async {
     await Firebase.initializeApp();
   }
 
   PageController controller = PageController();
   int currentPage = 0;
 
-  @override void initState() {
+  @override
+  void initState() {
     super.initState();
-    initiateFirebase() ;
+    initiateFirebase();
     gettingEmail();
   }
+
   @override
   Widget build(BuildContext context) {
-    SizeConfig().init(context) ;
+    SizeConfig().init(context);
     return Scaffold(
       body: Container(
         color: Colors.transparent,
@@ -288,59 +291,62 @@ class _SurveyState extends State<Survey> {
                                 print("accessing database");
 
                                 var time = DateTime.now().toString();
-                                await _firestore.collection('LungCancer').add({
-                                  'name': '$name',
-                                  'age': '$age',
-                                  'patientid': '$id',
-                                  'gender': '$gender',
-                                  'datetime': '$time',
-                                  'dob': '$dob',
-                                  '01': '${resultList[0]}',
-                                  '02': '${resultList[1]}',
-                                  '03': '${resultList[2]}',
-                                  '04': '${resultList[3]}',
-                                  '05': '${resultList[4]}',
-                                  '06': '${resultList[5]}',
-                                  '07': '${resultList[6]}',
-                                  '08': '${resultList[7]}',
-                                  '09': '${resultList[8]}',
-                                  '10': '${resultList[9]}',
-                                  '11': '${resultList[10]}',
-                                  '12': '${resultList[11]}',
-                                  '13': '${resultList[12]}',
-                                  '14': '${resultList[13]}',
-                                  '15': '${resultList[14]}',
-                                  '16': '${resultList[15]}',
-                                  '17': '${resultList[16]}',
-                                  '18': '${resultList[17]}',
-                                  '19': '${resultList[18]}',
-                                  '20': '${resultList[19]}',
-                                  '21': '${resultList[20]}',
-                                  '22': '${resultList[21]}',
-                                  '23': '${resultList[22]}',
-                                  '24': '${resultList[23]}',
-                                  '25': '${resultList[24]}',
-                                  '26': '${resultList[25]}',
-                                  '27': '${resultList[26]}',
-                                  '28': '${resultList[27]}',
-                                  '29': '${resultList[28]}',
-                                  '30': '${resultList[29]}',
-                                  '31': '${resultList[30]}',
-                                  '32': '${resultList[31]}',
-                                  '33': '${resultList[32]}',
-                                  '34': '${resultList[33]}',
-                                  '35': '${resultList[34]}',
-                                  '36': '${resultList[35]}',
-                                  '37': '${resultList[36]}',
-                                  '38': '${resultList[37]}',
-                                  '39': '${resultList[38]}',
-                                  '40': '${resultList[39]}',
-                                  '41': '${resultList[40]}',
-                                  '42': '${resultList[41]}',
-                                  '43': '${resultList[42]}',
-                                })
+                                await _firestore
+                                    .collection('LungCancer')
+                                    .add({
+                                      'name': '$name',
+                                      'age': '$age',
+                                      'patientid': '$id',
+                                      'gender': '$gender',
+                                      'datetime': '$time',
+                                      'dob': '$dob',
+                                      '01': '${resultList[0]}',
+                                      '02': '${resultList[1]}',
+                                      '03': '${resultList[2]}',
+                                      '04': '${resultList[3]}',
+                                      '05': '${resultList[4]}',
+                                      '06': '${resultList[5]}',
+                                      '07': '${resultList[6]}',
+                                      '08': '${resultList[7]}',
+                                      '09': '${resultList[8]}',
+                                      '10': '${resultList[9]}',
+                                      '11': '${resultList[10]}',
+                                      '12': '${resultList[11]}',
+                                      '13': '${resultList[12]}',
+                                      '14': '${resultList[13]}',
+                                      '15': '${resultList[14]}',
+                                      '16': '${resultList[15]}',
+                                      '17': '${resultList[16]}',
+                                      '18': '${resultList[17]}',
+                                      '19': '${resultList[18]}',
+                                      '20': '${resultList[19]}',
+                                      '21': '${resultList[20]}',
+                                      '22': '${resultList[21]}',
+                                      '23': '${resultList[22]}',
+                                      '24': '${resultList[23]}',
+                                      '25': '${resultList[24]}',
+                                      '26': '${resultList[25]}',
+                                      '27': '${resultList[26]}',
+                                      '28': '${resultList[27]}',
+                                      '29': '${resultList[28]}',
+                                      '30': '${resultList[29]}',
+                                      '31': '${resultList[30]}',
+                                      '32': '${resultList[31]}',
+                                      '33': '${resultList[32]}',
+                                      '34': '${resultList[33]}',
+                                      '35': '${resultList[34]}',
+                                      '36': '${resultList[35]}',
+                                      '37': '${resultList[36]}',
+                                      '38': '${resultList[37]}',
+                                      '39': '${resultList[38]}',
+                                      '40': '${resultList[39]}',
+                                      '41': '${resultList[40]}',
+                                      '42': '${resultList[41]}',
+                                      '43': '${resultList[42]}',
+                                    })
                                     .then((value) => print("User Added"))
-                                    .catchError((error) => print("Failed to add user: $error"));
+                                    .catchError((error) =>
+                                        print("Failed to add user: $error"));
                                 print('done');
 
                                 await Fluttertoast.showToast(
@@ -350,7 +356,10 @@ class _SurveyState extends State<Survey> {
                                 );
 
                                 //Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => MyApp()), (route) => false);
-
+                                Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Successful()));
                               } else {
                                 await Fluttertoast.showToast(
                                   msg: "Please Check your Login Details",

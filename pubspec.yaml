@@ -60,6 +60,8 @@ flutter:
     - assets/welcome/BG/
     - assets/welcome/MuteTextBG/
     - assets/survey/GIFs/Lung/1.gif/1.gif
+    - assets/welcome/Login1/
+    - assets/survey/Form/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
