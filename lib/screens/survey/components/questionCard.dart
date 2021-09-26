@@ -103,7 +103,7 @@ class QuestionCard1 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[0];
 
   @override
   _QuestionCard1State createState() => _QuestionCard1State();
@@ -321,7 +321,7 @@ class QuestionCard2 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[1];
 
   @override
   _QuestionCard2State createState() => _QuestionCard2State();
@@ -539,7 +539,7 @@ class QuestionCard3 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[2];
 
   @override
   _QuestionCard3State createState() => _QuestionCard3State();
@@ -757,7 +757,7 @@ class QuestionCard4 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[3];
 
   @override
   _QuestionCard4State createState() => _QuestionCard4State();
@@ -975,7 +975,7 @@ class QuestionCard5 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[4];
 
   @override
   _QuestionCard5State createState() => _QuestionCard5State();
@@ -1193,7 +1193,7 @@ class QuestionCard6 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[5];
 
   @override
   _QuestionCard6State createState() => _QuestionCard6State();
@@ -1411,7 +1411,7 @@ class QuestionCard7 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[6];
 
   @override
   _QuestionCard7State createState() => _QuestionCard7State();
@@ -1629,7 +1629,7 @@ class QuestionCard8 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[7];
 
   @override
   _QuestionCard8State createState() => _QuestionCard8State();
@@ -1847,7 +1847,7 @@ class QuestionCard9 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[8];
 
   @override
   _QuestionCard9State createState() => _QuestionCard9State();
@@ -2056,7 +2056,7 @@ class QuestionCard10 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[9];
 
   @override
   _QuestionCard10State createState() => _QuestionCard10State();
@@ -2274,7 +2274,7 @@ class QuestionCard11 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[10];
 
   @override
   _QuestionCard11State createState() => _QuestionCard11State();
@@ -2492,7 +2492,7 @@ class QuestionCard12 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[11];
 
   @override
   _QuestionCard12State createState() => _QuestionCard12State();
@@ -2701,7 +2701,7 @@ class QuestionCard13 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[12];
 
   @override
   _QuestionCard13State createState() => _QuestionCard13State();
@@ -2919,7 +2919,7 @@ class QuestionCard14 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[13];
 
   @override
   _QuestionCard14State createState() => _QuestionCard14State();
@@ -3128,7 +3128,7 @@ class QuestionCard15 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[14];
 
   @override
   _QuestionCard15State createState() => _QuestionCard15State();
@@ -3346,7 +3346,7 @@ class QuestionCard16 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[15];
 
   @override
   _QuestionCard16State createState() => _QuestionCard16State();
@@ -3555,7 +3555,7 @@ class QuestionCard17 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[16];
 
   @override
   _QuestionCard17State createState() => _QuestionCard17State();
@@ -3773,7 +3773,7 @@ class QuestionCard18 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[17];
 
   @override
   _QuestionCard18State createState() => _QuestionCard18State();
@@ -3991,7 +3991,7 @@ class QuestionCard19 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[18];
 
   @override
   _QuestionCard19State createState() => _QuestionCard19State();
@@ -4209,7 +4209,7 @@ class QuestionCard20 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[19];
 
   @override
   _QuestionCard20State createState() => _QuestionCard20State();
@@ -4427,7 +4427,7 @@ class QuestionCard21 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[20];
 
   @override
   _QuestionCard21State createState() => _QuestionCard21State();
@@ -4645,7 +4645,7 @@ class QuestionCard22 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[21];
 
   @override
   _QuestionCard22State createState() => _QuestionCard22State();
@@ -4863,7 +4863,7 @@ class QuestionCard23 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[22];
 
   @override
   _QuestionCard23State createState() => _QuestionCard23State();
@@ -5081,7 +5081,7 @@ class QuestionCard24 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[23];
 
   @override
   _QuestionCard24State createState() => _QuestionCard24State();
@@ -5299,7 +5299,7 @@ class QuestionCard25 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[24];
 
   @override
   _QuestionCard25State createState() => _QuestionCard25State();
@@ -5508,7 +5508,7 @@ class QuestionCard26 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[25];
 
   @override
   _QuestionCard26State createState() => _QuestionCard26State();
@@ -5726,7 +5726,7 @@ class QuestionCard27 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[26];
 
   @override
   _QuestionCard27State createState() => _QuestionCard27State();
@@ -5944,7 +5944,7 @@ class QuestionCard28 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[27];
 
   @override
   _QuestionCard28State createState() => _QuestionCard28State();
@@ -6165,7 +6165,7 @@ class QuestionCard29 extends StatefulWidget {
     ["7", 40.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[28];
 
   @override
   _QuestionCard29State createState() => _QuestionCard29State();
@@ -6353,6 +6353,69 @@ class _QuestionCard29State extends State<QuestionCard29> {
                   });
                 },
               ),
+              OptionButton(
+                text: widget.answerTextList[4][0],
+                textColor: widget.yourAnswer == widget.answerTextList[4][0]
+                    ? Colors.white
+                    : Colors.black,
+                buttonColor: widget.yourAnswer == widget.answerTextList[4][0]
+                    ? Color(0xff2BAAE4)
+                    : Color(0xffE8E8E8),
+                fontWeight: widget.yourAnswer == widget.answerTextList[4][0]
+                    ? FontWeight.w900
+                    : FontWeight.bold,
+                boxWidth:
+                getProportionateScreenWidth(widget.answerTextList[4][1]),
+                onTap: () {
+                  setState(() {
+                    widget.yourAnswer = widget.answerTextList[4][0];
+                    print(widget.yourAnswer);
+                    resultList[28] = widget.yourAnswer;
+                  });
+                },
+              ),
+              OptionButton(
+                text: widget.answerTextList[5][0],
+                textColor: widget.yourAnswer == widget.answerTextList[5][0]
+                    ? Colors.white
+                    : Colors.black,
+                buttonColor: widget.yourAnswer == widget.answerTextList[5][0]
+                    ? Color(0xff2BAAE4)
+                    : Color(0xffE8E8E8),
+                fontWeight: widget.yourAnswer == widget.answerTextList[5][0]
+                    ? FontWeight.w900
+                    : FontWeight.bold,
+                boxWidth:
+                getProportionateScreenWidth(widget.answerTextList[5][1]),
+                onTap: () {
+                  setState(() {
+                    widget.yourAnswer = widget.answerTextList[5][0];
+                    print(widget.yourAnswer);
+                    resultList[28] = widget.yourAnswer;
+                  });
+                },
+              ),
+              OptionButton(
+                text: widget.answerTextList[6][0],
+                textColor: widget.yourAnswer == widget.answerTextList[6][0]
+                    ? Colors.white
+                    : Colors.black,
+                buttonColor: widget.yourAnswer == widget.answerTextList[6][0]
+                    ? Color(0xff2BAAE4)
+                    : Color(0xffE8E8E8),
+                fontWeight: widget.yourAnswer == widget.answerTextList[6][0]
+                    ? FontWeight.w900
+                    : FontWeight.bold,
+                boxWidth:
+                getProportionateScreenWidth(widget.answerTextList[6][1]),
+                onTap: () {
+                  setState(() {
+                    widget.yourAnswer = widget.answerTextList[6][0];
+                    print(widget.yourAnswer);
+                    resultList[28] = widget.yourAnswer;
+                  });
+                },
+              ),
             ],
           ),
           SizedBox(
@@ -6386,7 +6449,7 @@ class QuestionCard30 extends StatefulWidget {
     ["7", 40.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[29];
 
   @override
   _QuestionCard30State createState() => _QuestionCard30State();
@@ -6574,6 +6637,69 @@ class _QuestionCard30State extends State<QuestionCard30> {
                   });
                 },
               ),
+              OptionButton(
+                text: widget.answerTextList[4][0],
+                textColor: widget.yourAnswer == widget.answerTextList[4][0]
+                    ? Colors.white
+                    : Colors.black,
+                buttonColor: widget.yourAnswer == widget.answerTextList[4][0]
+                    ? Color(0xff2BAAE4)
+                    : Color(0xffE8E8E8),
+                fontWeight: widget.yourAnswer == widget.answerTextList[4][0]
+                    ? FontWeight.w900
+                    : FontWeight.bold,
+                boxWidth:
+                getProportionateScreenWidth(widget.answerTextList[4][1]),
+                onTap: () {
+                  setState(() {
+                    widget.yourAnswer = widget.answerTextList[4][0];
+                    print(widget.yourAnswer);
+                    resultList[29] = widget.yourAnswer;
+                  });
+                },
+              ),
+              OptionButton(
+                text: widget.answerTextList[5][0],
+                textColor: widget.yourAnswer == widget.answerTextList[5][0]
+                    ? Colors.white
+                    : Colors.black,
+                buttonColor: widget.yourAnswer == widget.answerTextList[5][0]
+                    ? Color(0xff2BAAE4)
+                    : Color(0xffE8E8E8),
+                fontWeight: widget.yourAnswer == widget.answerTextList[5][0]
+                    ? FontWeight.w900
+                    : FontWeight.bold,
+                boxWidth:
+                getProportionateScreenWidth(widget.answerTextList[5][1]),
+                onTap: () {
+                  setState(() {
+                    widget.yourAnswer = widget.answerTextList[5][0];
+                    print(widget.yourAnswer);
+                    resultList[29] = widget.yourAnswer;
+                  });
+                },
+              ),
+              OptionButton(
+                text: widget.answerTextList[6][0],
+                textColor: widget.yourAnswer == widget.answerTextList[6][0]
+                    ? Colors.white
+                    : Colors.black,
+                buttonColor: widget.yourAnswer == widget.answerTextList[6][0]
+                    ? Color(0xff2BAAE4)
+                    : Color(0xffE8E8E8),
+                fontWeight: widget.yourAnswer == widget.answerTextList[6][0]
+                    ? FontWeight.w900
+                    : FontWeight.bold,
+                boxWidth:
+                getProportionateScreenWidth(widget.answerTextList[6][1]),
+                onTap: () {
+                  setState(() {
+                    widget.yourAnswer = widget.answerTextList[6][0];
+                    print(widget.yourAnswer);
+                    resultList[29] = widget.yourAnswer;
+                  });
+                },
+              ),
             ],
           ),
           SizedBox(
@@ -6604,7 +6730,7 @@ class QuestionCard31 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[30];
 
   @override
   _QuestionCard31State createState() => _QuestionCard31State();
@@ -6822,7 +6948,7 @@ class QuestionCard32 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[31];
 
   @override
   _QuestionCard32State createState() => _QuestionCard32State();
@@ -7040,7 +7166,7 @@ class QuestionCard33 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[32];
 
   @override
   _QuestionCard33State createState() => _QuestionCard33State();
@@ -7258,7 +7384,7 @@ class QuestionCard34 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[33];
 
   @override
   _QuestionCard34State createState() => _QuestionCard34State();
@@ -7476,7 +7602,7 @@ class QuestionCard35 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[34];
 
   @override
   _QuestionCard35State createState() => _QuestionCard35State();
@@ -7706,7 +7832,7 @@ class QuestionCard36 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[35];
 
   @override
   _QuestionCard36State createState() => _QuestionCard36State();
@@ -7924,7 +8050,7 @@ class QuestionCard37 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[36];
 
   @override
   _QuestionCard37State createState() => _QuestionCard37State();
@@ -8154,7 +8280,7 @@ class QuestionCard38 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[37];
 
   @override
   _QuestionCard38State createState() => _QuestionCard38State();
@@ -8372,7 +8498,7 @@ class QuestionCard39 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[38];
 
   @override
   _QuestionCard39State createState() => _QuestionCard39State();
@@ -8560,7 +8686,7 @@ class QuestionCard40 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[39];
 
   @override
   _QuestionCard40State createState() => _QuestionCard40State();
@@ -8783,7 +8909,7 @@ class _QuestionCard40State extends State<QuestionCard40> {
 }
 
 class QuestionCard41 extends StatefulWidget {
-  String yourAnswer = "";
+  String yourAnswer = resultList[40];
   final List<List> answerTextList = [
     ["Not At All", 75.0],
     ["A Little", 80.0],
@@ -8934,7 +9060,7 @@ class QuestionCard42 extends StatefulWidget {
     ["Very Much", 75.0]
   ];
   //[[text,width],[],...]
-  String yourAnswer = "";
+  String yourAnswer = resultList[41];
 
   @override
   _QuestionCard42State createState() => _QuestionCard42State();
@@ -9073,7 +9199,7 @@ class _QuestionCard42State extends State<QuestionCard42> {
 }
 
 class QuestionCard43 extends StatefulWidget {
-  String yourAnswer = "";
+  String yourAnswer = resultList[42];
   final List<List> answerTextList = [
     ["Not At All", 75.0],
     ["A Little", 80.0],

@@ -11,15 +11,15 @@ class _WelcomeState extends State<Welcome> {
   AudioPlayer audioPlayer = AudioPlayer();
   AudioPlayerState audioPlayerState = AudioPlayerState.PLAYING;
   String url =
-      "https://drive.google.com/file/d/1xPcYIBWSakHt2scRcFS5GaScWaZooM80/view?usp=sharing";
+      "https://2u039f-a.akamaihd.net/downloads/ringtones/files/mp3/temple-bell-2426.mp3";
   int i = 1;
   int count = 0;
 
   @override
   void dispose() {
-    super.dispose();
-    audioPlayer.release();
-    audioPlayer.dispose();
+    super.dispose() ;
+    audioPlayer.release() ;
+    audioPlayer.dispose() ;
   }
 
   playMusic() async {

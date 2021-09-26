@@ -113,7 +113,7 @@ class GIFCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             child: Image(
               fit: BoxFit.cover,
-              image: AssetImage("assets/survey/GIFs/Lung/1.gif"),
+              image: AssetImage("assets/survey/GIFs/Lung/1.gif/1.gif"),
             ),
           ),
           decoration: BoxDecoration(
