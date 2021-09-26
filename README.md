@@ -4,6 +4,9 @@ APK Link for the app:
 https://drive.google.com/file/d/1qZwg8mAZ6ydPw_hcFySiHgVqWf6PxbRV/view?usp=sharing
 
 -------------------------
+![Cover – 1@2x-min](https://user-images.githubusercontent.com/63850216/134797582-8228e225-baac-4944-81c5-1b21dd2a6a23.png)
+
+
 
 ## Inspiration
 - Difficulties faced by  cancer patients to fill **Patient Reported Outcome Measures (PROM)**
