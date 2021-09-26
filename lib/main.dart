@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Cancer App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: Login(),
+      home: Welcome(),
     );
   }
 }
