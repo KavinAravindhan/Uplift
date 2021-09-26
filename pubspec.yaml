@@ -55,7 +55,6 @@ flutter:
     - assets/survey/swipe_rectangle/
     - assets/welcome/BG/
     - assets/welcome/MuteTextBG/
-    - assets/welcome/MuteTextBG/Thangame-StarMusiQ.Com.mp3
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

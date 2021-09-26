@@ -3,16 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 class Welcome extends StatefulWidget {
-  const Welcome({Key? key}) : super(key: key);
-
   @override
   _WelcomeState createState() => _WelcomeState();
 }
 
 class _WelcomeState extends State<Welcome> {
   AudioPlayer audioPlayer = AudioPlayer();
-  AudioPlayerState audioPlayerState = AudioPlayerState.PAUSED;
-  String url = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+  AudioPlayerState audioPlayerState = AudioPlayerState.PLAYING;
+  String url =
+      "https://drive.google.com/file/d/1xPcYIBWSakHt2scRcFS5GaScWaZooM80/view?usp=sharing";
+  int i = 1;
+  int count = 0;
 
   @override
   void dispose() {
@@ -34,7 +35,10 @@ class _WelcomeState extends State<Welcome> {
 // this must be a top-level function
 
     SizeConfig().init(context);
-    playMusic();
+    if (i == 1) {
+      playMusic();
+    }
+
     return Scaffold(
       body: Stack(
         children: [
@@ -113,14 +117,18 @@ class _WelcomeState extends State<Welcome> {
                             child: Icon(
                                 audioPlayerState == AudioPlayerState.PLAYING
                                     ? Icons.volume_up_rounded
-                                    : Icons.volume_mute_rounded),
+                                    : Icons.volume_off_rounded),
                             onTap: () {
                               setState(() {
-                                if (audioPlayerState ==
-                                    AudioPlayerState.PLAYING) {
+                                print(audioPlayerState);
+                                if (i == 1) {
                                   stopMusic();
+                                  audioPlayerState = AudioPlayerState.STOPPED;
+                                  print("stopped");
+                                  i = 0;
                                 } else {
-                                  playMusic();
+                                  i = 1;
+                                  audioPlayerState = AudioPlayerState.PLAYING;
                                 }
                               });
                             },
