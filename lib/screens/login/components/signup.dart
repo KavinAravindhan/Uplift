@@ -110,6 +110,7 @@ class _SignUpState extends State<SignUp> {
                           name = input ;
                         });
                       },
+
                       decoration: const InputDecoration(
                         labelStyle: TextStyle(
                             color: Colors.black,
@@ -164,6 +165,7 @@ class _SignUpState extends State<SignUp> {
                                       onChanged: (_switchIsOn) {
                                         setState(() {
                                           if (_switchIsOn) {
+
                                             gender = "female" ;
                                             maleTextColor = Colors.grey;
                                             femaleTextColor = Colors.pink;
@@ -220,6 +222,7 @@ class _SignUpState extends State<SignUp> {
                                       onConfirm: (date) {
                                     print('confirm $date');
                                     dob = date.toString() ;
+
                                   },
                                       currentTime: DateTime.now(),
                                       locale: LocaleType.en);

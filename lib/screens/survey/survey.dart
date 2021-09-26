@@ -12,6 +12,8 @@ import 'package:cancer_app/screens/login/components/signup.dart';
 
 import 'components/successfullySubmitted.dart';
 
+import 'components/successfullySubmitted.dart';
+
 final _auth = FirebaseAuth.instance;
 bool isTTS = true;
 
@@ -27,6 +29,7 @@ class _SurveyState extends State<Survey> {
   //String gender = "male";
   //String dob = "12";
   String age = "18" ;
+
   var email;
 
   Future<void> gettingEmail() async {
