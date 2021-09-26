@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "226619458366",
+    "project_id": "upliftproject-bd80b",
+    "storage_bucket": "upliftproject-bd80b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226619458366:android:c5f3622122d3c5277ca26f",
+        "android_client_info": {
+          "package_name": "com.cancerproject1.cancer_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226619458366-lfljc3g89avb62tah18icpbid2dbep04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjK__yXy_EA0NauuDhgPKkCZkbUsbZ5To"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226619458366-lfljc3g89avb62tah18icpbid2dbep04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
