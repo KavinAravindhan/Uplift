@@ -60,6 +60,49 @@ flutter:
     - assets/welcome/BG/
     - assets/welcome/MuteTextBG/
     - assets/survey/GIFs/Lung/1.gif/1.gif
+    - assets/survey/GIFs/Lung/2.gif/
+    - assets/survey/GIFs/Lung/3.gif/
+    - assets/survey/GIFs/Lung/4.gif/
+    - assets/survey/GIFs/Lung/5.gif/
+    - assets/survey/GIFs/Lung/6.gif/
+    - assets/survey/GIFs/Lung/7.gif/
+    - assets/survey/GIFs/Lung/8.gif/
+    - assets/survey/GIFs/Lung/9.gif/
+    - assets/survey/GIFs/Lung/10.gif/
+    - assets/survey/GIFs/Lung/11.gif/
+    - assets/survey/GIFs/Lung/12.gif/
+    - assets/survey/GIFs/Lung/13.gif/
+    - assets/survey/GIFs/Lung/14.gif/
+    - assets/survey/GIFs/Lung/15.gif/
+    - assets/survey/GIFs/Lung/16.gif/
+    - assets/survey/GIFs/Lung/17.gif/
+    - assets/survey/GIFs/Lung/18.gif/
+    - assets/survey/GIFs/Lung/19.gif/
+    - assets/survey/GIFs/Lung/20.gif/
+    - assets/survey/GIFs/Lung/21.gif/
+    - assets/survey/GIFs/Lung/22.gif/
+    - assets/survey/GIFs/Lung/23.gif/
+    - assets/survey/GIFs/Lung/24.gif/
+    - assets/survey/GIFs/Lung/25.gif/
+    - assets/survey/GIFs/Lung/26.gif/
+    - assets/survey/GIFs/Lung/27.gif/
+    - assets/survey/GIFs/Lung/29.gif/
+    - assets/survey/GIFs/Lung/30.gif/
+    - assets/survey/GIFs/Lung/31.gif/
+    - assets/survey/GIFs/Lung/32.gif/
+    - assets/survey/GIFs/Lung/33.gif/
+    - assets/survey/GIFs/Lung/34.gif/
+    - assets/survey/GIFs/Lung/35.gif/
+    - assets/survey/GIFs/Lung/36.gif/
+    - assets/survey/GIFs/Lung/37.gif/
+    - assets/survey/GIFs/Lung/38.gif/
+    - assets/survey/GIFs/Lung/39.gif/
+    - assets/survey/GIFs/Lung/40.gif/
+    - assets/survey/GIFs/Lung/41.gif/
+    - assets/survey/GIFs/Lung/42.gif/
+    - assets/survey/GIFs/Lung/43.gif/
+    - assets/welcome/Login1/
+    - assets/survey/Form/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
