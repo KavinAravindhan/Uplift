@@ -7,7 +7,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:firebase_core/firebase_core.dart';
-import'package:cancer_app/constants.dart' ;
+import 'package:cancer_app/constants.dart';
 import 'package:cancer_app/screens/login/components/signup.dart';
 
 import 'components/successfullySubmitted.dart';
@@ -28,7 +28,7 @@ class _SurveyState extends State<Survey> {
   String id = "1";
   //String gender = "male";
   //String dob = "12";
-  String age = "18" ;
+  String age = "18";
 
   var email;
 
@@ -256,7 +256,6 @@ class _SurveyState extends State<Survey> {
                   container: QuestionCard38(),
                   gifText: giflist[37],
                   speech: ttsList[37],
-
                 ),
                 Body(
                   container: QuestionCard39(),
@@ -293,33 +292,39 @@ class _SurveyState extends State<Survey> {
               },
             ),
             Container(
-              margin:
-                  EdgeInsets.only(left: 20, right: 20, bottom: 20, top: 730),
+              margin: EdgeInsets.only(
+                  left: 20,
+                  right: 20,
+                  bottom: 20,
+                  top: getProportionateScreenHeight(780)),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  ClipRect(
-                    child: BackdropFilter(
-                      filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-                      child: GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            controller.jumpToPage(currentPage - 1);
-                          });
-                        },
-                        child: Center(
-                          child: Container(
-                            width: getProportionateScreenWidth(41),
-                            height: getProportionateScreenWidth(41),
-                            child: Center(
-                              child: Icon(
-                                Icons.arrow_back_ios_outlined,
-                                size: getProportionateScreenHeight(20),
+                  Container(
+                    height: getProportionateScreenHeight(41),
+                    child: ClipRect(
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                        child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              controller.jumpToPage(currentPage - 1);
+                            });
+                          },
+                          child: Center(
+                            child: Container(
+                              width: getProportionateScreenWidth(41),
+                              height: getProportionateScreenWidth(41),
+                              child: Center(
+                                child: Icon(
+                                  Icons.arrow_back_ios_outlined,
+                                  size: getProportionateScreenHeight(20),
+                                ),
                               ),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.white10.withOpacity(0.6)),
                             ),
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.white10.withOpacity(0.6)),
                           ),
                         ),
                       ),
@@ -351,28 +356,33 @@ class _SurveyState extends State<Survey> {
                   ),
                   Container(
                     child: currentPage != 42
-                        ? ClipRect(
-                            child: BackdropFilter(
-                              filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-                              child: GestureDetector(
-                                onTap: () {
-                                  setState(() {
-                                    controller.jumpToPage(currentPage + 1);
-                                  });
-                                },
-                                child: Center(
-                                  child: Container(
-                                    width: getProportionateScreenWidth(41),
-                                    height: getProportionateScreenWidth(41),
-                                    child: Center(
-                                      child: Icon(
-                                        Icons.arrow_forward_ios_rounded,
-                                        size: 20,
+                        ? Container(
+                            height: getProportionateScreenHeight(41),
+                            child: ClipRect(
+                              child: BackdropFilter(
+                                filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                                child: GestureDetector(
+                                  onTap: () {
+                                    setState(() {
+                                      controller.jumpToPage(currentPage + 1);
+                                    });
+                                  },
+                                  child: Center(
+                                    child: Container(
+                                      width: getProportionateScreenWidth(41),
+                                      height: getProportionateScreenWidth(41),
+                                      child: Center(
+                                        child: Icon(
+                                          Icons.arrow_forward_ios_rounded,
+                                          size: 20,
+                                        ),
                                       ),
+                                      decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(50),
+                                          color:
+                                              Colors.white10.withOpacity(0.6)),
                                     ),
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(50),
-                                        color: Colors.white10.withOpacity(0.6)),
                                   ),
                                 ),
                               ),
