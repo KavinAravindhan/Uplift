@@ -1,4 +1,4 @@
-# Uplift 🌟
+# UpLift 🌟
 
 ![Build Status](https://img.shields.io/badge/build-stable-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -7,7 +7,7 @@
 ![Firebase](https://img.shields.io/badge/Firebase-Database-orange?logo=firebase)
 ![Hackathon](https://img.shields.io/badge/Hackathon-HackZurich%202021-neon)
 
-Uplift is a mobile application designed to uplift cancer patients by providing a user-friendly interface for filling out Patient Reported Outcome Measures (PROM). This project was developed during [HackZurich 2021](https://hackzurich2021.devpost.com/).
+UpLift is a mobile application designed to uplift cancer patients by providing a user-friendly interface for filling out Patient Reported Outcome Measures (PROM). This project was developed during [HackZurich 2021](https://hackzurich2021.devpost.com/).
 
 ## Inspiration 
 - Difficulties faced by cancer patients in filling Patient Reported Outcome Measures (PROM).
