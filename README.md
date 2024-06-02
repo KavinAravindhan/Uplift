@@ -70,6 +70,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
   <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Welcome.png" width="300" height="600">
   <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Login.png" width="300" height="600">
+</div>
+</br>
+<div align="center">
   <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Home.png" width="300" height="600">
 </div>
 </br>
