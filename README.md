@@ -28,7 +28,7 @@ Uplift is a mobile application designed to uplift cancer patients by providing a
 - **Backend:** Firebase
 - **UI Design:** Adobe XD
 
-## Installation Instructions
+## Installation
 
 To get started with Fucolicious, follow these steps:
 
