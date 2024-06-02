@@ -1,85 +1,84 @@
-APK Link for the app:
--------------------------
+# Uplift 🌟
 
-https://drive.google.com/file/d/1qZwg8mAZ6ydPw_hcFySiHgVqWf6PxbRV/view?usp=sharing
+![Build Status](https://img.shields.io/badge/build-stable-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Platform](https://img.shields.io/badge/platform-Android-yellow)
+![Flutter](https://img.shields.io/badge/Flutter-Framework-blue?logo=flutter)
+![Firebase](https://img.shields.io/badge/Firebase-Database-orange?logo=firebase)
+![Hackathon](https://img.shields.io/badge/Hackathon-HackZurich%202021-neon)
 
--------------------------
-![Cover – 1@2x-min](https://user-images.githubusercontent.com/63850216/134797582-8228e225-baac-4944-81c5-1b21dd2a6a23.png)
+Uplift is a mobile application designed to uplift cancer patients by providing a user-friendly interface for filling out Patient Reported Outcome Measures (PROM). This project was developed during HackZurich 2021.
 
+## Inspiration 
+- Difficulties faced by cancer patients in filling Patient Reported Outcome Measures (PROM).
+- Lack of user-friendly interfaces for surveys.
+- Boring and repetitive questions in existing solutions.
+- Absence of data storage facilities for doctors to review survey results.
 
+## What It Does 
+- Provides a colorful and user-friendly interface to boost dopamine levels in patients.
+- Includes soothing music to please the patients.
+- Displays funny videos for each question to keep patients entertained.
+- Utilizes Text-To-Speech for reading out questions, making the survey accessible.
+- Allows patients to pause and resume the survey at their convenience.
+- Integrates a database to store survey responses for later review by doctors.
 
-## Inspiration
-- Difficulties faced by  cancer patients to fill **Patient Reported Outcome Measures (PROM)**
-- No user-friendly user interface for filling the survey
-- Boring and repetitive questions
-- No pause button!
-- No storage facility of the data from survey to be reviewed by doctors
-- We knew that cancer patients would be very tensed and stress. We wanted to create a positive environment for them, only then they would be able to recover. We didn’t want to give them the hospital feel they experience on a day to day basis. We really really wanted to make them smile and recharge their positive energy
+## Technologies Used 🛠️
+- **Frontend:** Flutter, Dart
+- **Backend:** Firebase
+- **UI Design:** Adobe XD
 
+## Installation Instructions
 
-## What it does
-- A user-friendly user interface which is very colorful to boost dopamine in patients
-- Highlighted import text in each and every sentence with GIF and audio description would be easy for anyone to understand even if they don’t the language
-- A soothing music to please the ears of the patients
-- Funny GIF and videos for each question to make the patients happy while answering the questions
-- Text-To-Speech for reading out the questions to the patients so they can take the survey with ease
-- A pause option so the patients can pause the survey and resume at their ease
-- A database is integrated with the application for storing the survey entered by the patients to be 
-   reviewed later by the doctors 
+To get started with Fucolicious, follow these steps:
 
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/KavinAravindhan/Uplift.git
+   ```
+2. **Navigate to the project directory:**
+   ```sh
+   cd Uplift
+   ```
+3. **Install dependencies:**
+   ```sh
+   flutter pub get
+   ```
+4. **Run the app:**
+   ```sh
+   flutter run
+   ```
 
-## How we built it
-- We used Adobe XD to create the stunning colorful user interface
-- Using dart and Flutter, we created the widgets and made the UI responsive
-- We integrated firebase as database  with the application to store the survey details 
-- We have added a lot of gifs, videos and music to please the patients who use the application so they 
-   don't get bored while filling the survey
+## Challenges We Ran Into
+- Integrating media assets with the user interface.
+- Connecting the Flutter application with Firebase.
+- Finding and selecting appropriate funny gifs and videos.
 
+## What's Next for Uplift
+- Adding more cancer-related surveys to the app.
+- Integrating with hospitals and doctors for reviewing patient details and providing online counseling.
+- Adding features like an online patient community and chat options to further comfort patients.
 
-## Challenges we ran into
-- We had challenge of integrating the asset with the user interface 
-- Another challenge we had was integrating the created flutter package with firebase which was 
-  eventually solved
-- Last but not the least we had the challenge of finding funny gifs and videos to boost the dopamine 
+## License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Accomplishments that we're proud of
-- Creating an user-friendly app for patients to take the survey with ease
-- A hope of making patients smile while taking the survey 
-- The learnings we did while creating the app 
-- Specifically to mention is the team coordination which made all the above happen  
+## Application Images
 
+### Welcome Screen
+![Welcome Screen](https://github.com/KavinAravindhan/Fucolicious/blob/master/images/Welcome.png)  <!-- Replace with actual Uplift images -->
 
-## What we learned
-- Major learning was how it was difficult for the cancer patients to take a survey, how they feel lost and 
-   why they need a lot of love
-- We learned a lot about plug-ins and related applications 
-- We also learned about how to integrate 
+### Survey Screen
+![Survey Screen](placeholder_survey_screen_image_url)  <!-- Replace with actual Uplift images -->
 
+### Funny Video Example
+![Funny Video](placeholder_funny_video_image_url)  <!-- Replace with actual Uplift images -->
 
-## What's next for UpLift
-- Adding up all the cancer surveys to make the app available for all people
-- Integrating it with hospitals and doctors for reviewing the patient details and give online counselling to 
-   the patients
-- Adding other features like online patient community and online chatting options to make the patients 
-  even more comfortable and relaxed while answering the survey
+## Links 🔗
+- **App Download:** [Download Uplift for Android](https://drive.google.com/file/d/1_H8fwJ69979PsZycsw7gM4BGarr4o8BD/view?usp=drive_link)
+- **Devpost Submission:** [Uplift on Devpost](https://devpost.com/software/uplift-2i8mgd)
+- **YouTube Demo:** [Watch the Demo](https://youtu.be/vIL1kX0S0hk)
 
+## Team Acknowledgment 🙌
 
-
-# cancer_app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our,
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
- 
+A special thanks to our amazing team for their dedication and hard work. Despite the challenges, their commitment to learning new technologies and collaborating effectively made this project a success.
