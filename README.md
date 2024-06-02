@@ -7,7 +7,7 @@
 ![Firebase](https://img.shields.io/badge/Firebase-Database-orange?logo=firebase)
 ![Hackathon](https://img.shields.io/badge/Hackathon-HackZurich%202021-neon)
 
-Uplift is a mobile application designed to uplift cancer patients by providing a user-friendly interface for filling out Patient Reported Outcome Measures (PROM). This project was developed during HackZurich 2021.
+Uplift is a mobile application designed to uplift cancer patients by providing a user-friendly interface for filling out Patient Reported Outcome Measures (PROM). This project was developed during [HackZurich 2021](https://hackzurich2021.devpost.com/).
 
 ## Inspiration 
 - Difficulties faced by cancer patients in filling Patient Reported Outcome Measures (PROM).
@@ -65,19 +65,24 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Application Images
 
-### Welcome Screen
-![Welcome Screen](https://github.com/KavinAravindhan/Fucolicious/blob/master/images/Welcome.png)  <!-- Replace with actual Uplift images -->
+![Cover](https://github.com/KavinAravindhan/Uplift/blob/master/images/Cover.png)
 
-### Survey Screen
-![Survey Screen](placeholder_survey_screen_image_url)  <!-- Replace with actual Uplift images -->
-
-### Funny Video Example
-![Funny Video](placeholder_funny_video_image_url)  <!-- Replace with actual Uplift images -->
+<div align="center">
+  <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Welcome.png" width="300" height="600">
+  <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Login.png" width="300" height="600">
+  <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Home.png" width="300" height="600">
+</div>
+</br>
+<div align="center">
+  <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Survey.png" width="300" height="600">
+  <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Submission.png" width="300" height="600">
+</div>
 
 ## Links 🔗
 - **App Download:** [Download Uplift for Android](https://drive.google.com/file/d/1_H8fwJ69979PsZycsw7gM4BGarr4o8BD/view?usp=drive_link)
 - **Devpost Submission:** [Uplift on Devpost](https://devpost.com/software/uplift-2i8mgd)
-- **YouTube Demo:** [Watch the Demo](https://youtu.be/vIL1kX0S0hk)
+- **YouTube Demo:** [Watch on YouTube](https://youtu.be/vIL1kX0S0hk)
+- **Application Demo:** [Watch the Demo](https://github.com/KavinAravindhan/Uplift/blob/master/images/Demo%20Video.mp4)
 
 ## Team Acknowledgment 🙌
 
