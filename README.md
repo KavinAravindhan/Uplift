@@ -68,7 +68,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ![Cover](https://github.com/KavinAravindhan/Uplift/blob/master/images/Cover.png)
 
 <div align="center">
-  <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Welcome.png" width="300" height="600">
+  <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Welcome.png" width="300" height="600" >
+   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Login.png" width="300" height="600">
 </div>
 </br>
@@ -78,6 +79,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 </br>
 <div align="center">
   <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Survey.png" width="300" height="600">
+   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://github.com/KavinAravindhan/Uplift/blob/master/images/Submission.png" width="300" height="600">
 </div>
 
