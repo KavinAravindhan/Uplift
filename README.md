@@ -30,7 +30,7 @@ UpLift is a mobile application designed to uplift cancer patients by providing a
 
 ## Installation
 
-To get started with Fucolicious, follow these steps:
+To get started with Uplift, follow these steps:
 
 1. **Clone the repository:**
    ```sh
