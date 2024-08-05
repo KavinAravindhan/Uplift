@@ -89,6 +89,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **YouTube Demo:** [Watch on YouTube](https://youtu.be/vIL1kX0S0hk)
 - **Application Demo:** [Watch the Demo](https://github.com/KavinAravindhan/Uplift/blob/master/images/Demo%20Video.mp4)
 
+To view the application demo file, download them locally by clicking "View Raw" once you access the link.
+
 ## Team Acknowledgment 🙌
 
 A special thanks to our amazing team for their dedication and hard work. Despite the challenges, their commitment to learning new technologies and collaborating effectively made this project a success.
